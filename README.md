@@ -19,56 +19,45 @@ Extensive experiments conducted on clustering and link prediction tasks under ra
 
 ## Datasets
 
-* [cora](https://github.com/kimiyoung/planetoid/tree/master/data)
+* [Cora](https://github.com/kimiyoung/planetoid/tree/master/data)
 
-* [LastFM](https://grouplens.org/datasets/)
+* [Citeseer](https://github.com/kimiyoung/planetoid/tree/master/data)
 
-* [Yelp2018](https://www.yelp.com/dataset/challenge)
-
-* [MovieLens](https://grouplens.org/datasets/movielens/)
+* [Wiki](https://github.com/kimiyoung/planetoid/tree/master/data)
 
 ## Requirements
 
-* python >= 3.9
-
-* torch>=1.7.0
-
-* dgl>=0.7.0
-
-* scikit-learn>=0.24.0
+* python == 3.7
+* pytorch ==1.8
+* networkx == 2.5
+* deeprobust == 0.2.4
+* torch-geometric == 2.0.1
 
 
 
+## Command and configurations
 
-
-
-### Command and configurations
-
-#### on Amazon-book
-```bash
-python -u main.py --model_type baseline  --dataset amazon-book --gpu_id 0 --ue_lambda 0.1 --idf_sampling 1 --layer_size [64,32,16] --embed_size 64 --lr 0.0001 --epoch 3000 --verbose 1 --save_flag 1 --pretrain -1 --batch_size 8192 --sprate 1
+### Node clustering
+#### Generate random noises
+```shell
+python random_attack.py  
 ```
-#### on LastFM
-```bash
-python -u main.py --model_type baseline --dataset last-fm --gpu_id 0 --ue_lambda 0.1 --idf_sampling 1 --layer_size [64,32,16] --embed_size 64 --lr 0.0001 --epoch 3000 --verbose 1 --save_flag 1 --pretrain -1 --batch_size 8192 --sprate 1
+#### Generate meta-attack result
+```shell
+python meta_attack.py  
 ```
-#### on Yelp2018
-```bash
-python -u main.py --model_type baseline --dataset yelp2018 --gpu_id 0 --ue_lambda 0.1 --idf_sampling 1 --layer_size [64,32,16] --embed_size 64 --lr 0.0001 --epoch 3000 --verbose 1 --save_flag 1 --pretrain -1 --batch_size 8192 --sprate 1
+#### USER for node clustering
+```shell
+python attack_main.py
 ```
-#### on MovieLens
-```bash
-python -u main.py --model_type baseline --dataset movie-lens --gpu_id 0 --ue_lambda 0.4 --idf_sampling 1 --layer_size [64,32,16] --embed_size 64 --lr 0.0001 --epoch 3000 --verbose 1 --save_flag 1 --pretrain -1 --batch_size 8192 --sprate 1
-```
-#### General flags
 
-```{txt}
-optional arguments:
-  --dataset                       dataset                               
-  --idf_sampling                  negative entity number
-  --layer_size                    size of each layer
-  --embed_size                    dimension of embedding vector 
-  --epoch                         max epochs before stop
-  --pretrain                      use pretrain or not
-  --batch_size                    batch size
+### Link prediction
+#### Generate random noises
+```shell
+python lp_random_attack.py  
+```
+
+#### USER for link prediction
+```shell
+python lp_attack_main.py
 ```

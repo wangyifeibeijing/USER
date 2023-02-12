@@ -2,7 +2,7 @@
 
 Yifei Wang, Yupan Wang, Zeyu Zhang, Song Yang, Kaiqi Zhao, Jiamou Liu*
 
-The University of Auckland, Auckland, New Zealand
+School of Computer Science, The University of Auckland, Auckland, New Zealand
 
 {wany107, ywan980, zzha669, syan382}@aucklanduni.ac.nz, {kaiqi.zhao, jiamou.liu}@auckland.ac.nz
 <!--#### -->

@@ -1,6 +1,6 @@
 # USER: Unsupervised Structural Entropy-based Robust Graph Neural Network (AAAI-2023)
 
-Yifei Wang, Yupan Wang, Zeyu Zhang, Song Yang, Kaiqi Zhao, Jiamou Liu
+Yifei Wang, Yupan Wang, Zeyu Zhang, Song Yang, Kaiqi Zhao, Jiamou Liu*
 
 The University of Auckland, Auckland, New Zealand
 

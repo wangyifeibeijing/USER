@@ -17,6 +17,15 @@ Extensive experiments conducted on clustering and link prediction tasks under ra
 
 ![image](images/USER_framework.png "The proposed USER framework")
 
+## Citation
+```{txt}
+@inproceedings{Wang2023USERUS,
+  title={USER: Unsupervised Structural Entropy-based Robust Graph Neural Network},
+  author={Yifei Wang and Yupan Wang and Zeyu Zhang and Song Yang and Kaiqi Zhao and Jiamou Liu},
+  year={2023}
+}
+```
+
 ## Datasets
 
 * [Cora](https://github.com/kimiyoung/planetoid/tree/master/data)

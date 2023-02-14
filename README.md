@@ -17,6 +17,12 @@ Extensive experiments conducted on clustering and link prediction tasks under ra
 
 ![image](images/USER_framework.png "The proposed USER framework")
 
+
+## Link
+* [Arxiv](https://arxiv.org/abs/2302.05889)
+* [Papers with Code](https://paperswithcode.com/paper/user-unsupervised-structural-entropy-based)
+
+
 ## Citation
 ```{txt}
 @inproceedings{Wang2023USERUS,

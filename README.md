@@ -25,9 +25,10 @@ Extensive experiments conducted on clustering and link prediction tasks under ra
 
 ## Citation
 ```{txt}
-@inproceedings{Wang2023USERUS,
+@article{wang2023user,
   title={USER: Unsupervised Structural Entropy-based Robust Graph Neural Network},
-  author={Yifei Wang and Yupan Wang and Zeyu Zhang and Song Yang and Kaiqi Zhao and Jiamou Liu},
+  author={Wang, Yifei and Wang, Yupan and Zhang, Zeyu and Yang, Song and Zhao, Kaiqi and Liu, Jiamou},
+  journal={arXiv preprint arXiv:2302.05889},
   year={2023}
 }
 ```
